@@ -36,7 +36,8 @@ body {
   height: 2.8em;
   width: 2.8em;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: #3332327a;
+  color: white;
 }
 
 .search-bar {
