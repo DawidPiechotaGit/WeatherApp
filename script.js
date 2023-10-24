@@ -20,6 +20,7 @@ function fetchWeather(city) {
         "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
       document.body.style.backgroundImage =
         "url('https://source.unsplash.com/1600x900/?" + data.name + "')";
+      document.querySelector(".weather").classList.remove("loading");
     });
 }
 
