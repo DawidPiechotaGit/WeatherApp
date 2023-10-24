@@ -10,7 +10,8 @@ function fetchWeather(city) {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      document.querySelector(".temp").innerHTML = data.main.temp + "°C";
+      document.querySelector(".temp").innerHTML =
+        Math.round(data.main.temp) + "°C";
       document.querySelector(".humidity").innerHTML =
         "Humidity: " + data.main.humidity + "%";
       document.querySelector(".city").innerHTML = "Weather in " + data.name;
