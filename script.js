@@ -12,7 +12,7 @@ function fetchWeather(city) {
       console.log(data);
       document.querySelector(".temp").innerHTML = data.main.temp + "°C";
       document.querySelector(".humidity").innerHTML =
-        "Humidity: " + data.main.humidity;
+        "Humidity: " + data.main.humidity + "%";
       document.querySelector(".city").innerHTML = "Weather in " + data.name;
       document.querySelector(".wind").innerHTML =
         "Wind Speed: " + data.wind.speed + " KMH";
