@@ -1,7 +1,6 @@
 const apiKey = "dc18b6120ad964dfe0da64216d394f74";
 
 const search = document.querySelector(".search-bar");
-const searchValue = search.value;
 
 function fetchWeather(city) {
   fetch(
@@ -12,7 +11,6 @@ function fetchWeather(city) {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       document.querySelector(".temp").innerHTML =
         Math.round(data.main.temp) + "°C";
       document.querySelector(".humidity").innerHTML =
@@ -21,7 +19,7 @@ function fetchWeather(city) {
         data.weather[0].description;
       document.querySelector(".city").innerHTML = "Weather in " + data.name;
       document.querySelector(".wind").innerHTML =
-        "Wind Speed: " + data.wind.speed + " KMH";
+        "Wind Speed: " + data.wind.speed + " km/h";
       document.querySelector(".icon").src =
         "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
       document.body.style.backgroundImage =
