@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap");
 
+:root {
+  --main-bg-color: #3332327a;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -14,7 +18,7 @@ body {
 }
 
 .card {
-  background: #3332327a;
+  background: var(--main-bg-color);
   padding: 2em;
   border-radius: 15px;
   width: 100%;
@@ -37,7 +41,7 @@ body {
   height: 2.8em;
   width: 2.8em;
   cursor: pointer;
-  background-color: #3332327a;
+  background-color: var(--main-bg-color);
   color: white;
 }
 
@@ -51,7 +55,7 @@ body {
   border: none;
   outline: none;
   padding: 0.4em 1em;
-  background-color: #3332327a;
+  background-color: var(--main-bg-color);
   color: white;
   width: 50%;
   font-family: inherit;
