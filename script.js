@@ -1,4 +1,4 @@
-const apiKey = "dc18b6120ad964dfe0da64216d394f74";
+const apiKey = "";
 
 const search = document.querySelector(".search-bar");
 const failedText = document.querySelector(".failed");
